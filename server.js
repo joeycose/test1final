@@ -1,5 +1,3 @@
-var dataService = require('./data-service'); // require data-service file 
-
 var express = require('express'); // Express web server framework
 var app = express();
 
@@ -18,5 +16,5 @@ app.get('/', function(req, res) {
 
 // this defines a "route":
 app.get('/test1', function(req, res) {
-  res.sendFile(__dirname + '/views/test1.html.html');
+  res.sendFile(__dirname + '/views/test1.html');
 });
