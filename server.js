@@ -13,10 +13,6 @@ app.listen(process.env.PORT || 8080, function() {
 });
 
 app.get('/', function(req, res) {
-  res.send('<h1>Hello World!</h1>');
-});
-
-app.get('/', function(req, res) {
   res.sendFile(__dirname + '/views/home.html');
 });
 
